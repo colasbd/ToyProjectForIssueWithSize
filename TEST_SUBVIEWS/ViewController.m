@@ -7,21 +7,60 @@
 //
 
 #import "ViewController.h"
+#import "ColorViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UIView *mainView;
+@property (nonatomic, strong, readwrite) ColorViewController * colorVC ;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
++ (void)fillView:(UIView *)bigView
+        withView:(UIView *)view
+{
+    view.translatesAutoresizingMaskIntoConstraints = NO ;
+    //     view.translatesAutoresizingMaskIntoConstraints = YES ;
+    
+    view.frame = bigView.bounds ;
+    
+    [bigView addSubview:view] ;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    self.colorVC = [ColorViewController new] ;
+    
+    UIView * newView = [UIView new] ;
+    newView.backgroundColor = [UIColor blackColor] ;
+    
+    [[self class] fillView:self.mainView
+                  withView:self.colorVC.view] ;
+}
+
+
+
+- (IBAction)log:(id)sender {
+    UIView * view = [[self.mainView subviews] firstObject] ;
+    
+   NSLog(@"%@",view) ;
+}
+
+- (IBAction)fillWithNormalView:(id)sender
+{
+    for (UIView * view in [self.mainView subviews])
+    {
+        [view removeFromSuperview] ;
+    }
+    
+    UIView * newView = [UIView new] ;
+    newView.backgroundColor = [UIColor blackColor] ;
+    
+    [ViewController fillView:self.mainView
+                    withView:newView] ;
 }
 
 @end

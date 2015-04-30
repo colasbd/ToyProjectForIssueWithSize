@@ -14,6 +14,8 @@
 		CE33B2E41AF26E8B0082ABCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE33B2E31AF26E8B0082ABCB /* Images.xcassets */; };
 		CE33B2E71AF26E8B0082ABCB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE33B2E51AF26E8B0082ABCB /* LaunchScreen.xib */; };
 		CE33B2F31AF26E8B0082ABCB /* TEST_SUBVIEWSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33B2F21AF26E8B0082ABCB /* TEST_SUBVIEWSTests.m */; };
+		CE33B2FF1AF26EB20082ABCB /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE33B2FD1AF26EB20082ABCB /* ColorViewController.m */; };
+		CE33B3001AF26EB20082ABCB /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE33B2FE1AF26EB20082ABCB /* ColorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		CE33B2EC1AF26E8B0082ABCB /* TEST_SUBVIEWSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEST_SUBVIEWSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE33B2F11AF26E8B0082ABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE33B2F21AF26E8B0082ABCB /* TEST_SUBVIEWSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEST_SUBVIEWSTests.m; sourceTree = "<group>"; };
+		CE33B2FC1AF26EB20082ABCB /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		CE33B2FD1AF26EB20082ABCB /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		CE33B2FE1AF26EB20082ABCB /* ColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		CE33B2D51AF26E8B0082ABCB /* TEST_SUBVIEWS */ = {
 			isa = PBXGroup;
 			children = (
+				CE33B2FE1AF26EB20082ABCB /* ColorViewController.xib */,
+				CE33B2FC1AF26EB20082ABCB /* ColorViewController.h */,
+				CE33B2FD1AF26EB20082ABCB /* ColorViewController.m */,
 				CE33B2DA1AF26E8B0082ABCB /* AppDelegate.h */,
 				CE33B2DB1AF26E8B0082ABCB /* AppDelegate.m */,
 				CE33B2DD1AF26E8B0082ABCB /* ViewController.h */,
@@ -201,6 +209,7 @@
 			files = (
 				CE33B2E21AF26E8B0082ABCB /* Main.storyboard in Resources */,
 				CE33B2E71AF26E8B0082ABCB /* LaunchScreen.xib in Resources */,
+				CE33B3001AF26EB20082ABCB /* ColorViewController.xib in Resources */,
 				CE33B2E41AF26E8B0082ABCB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 			files = (
 				CE33B2DF1AF26E8B0082ABCB /* ViewController.m in Sources */,
 				CE33B2DC1AF26E8B0082ABCB /* AppDelegate.m in Sources */,
+				CE33B2FF1AF26EB20082ABCB /* ColorViewController.m in Sources */,
 				CE33B2D91AF26E8B0082ABCB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
